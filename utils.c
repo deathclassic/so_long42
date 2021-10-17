@@ -6,7 +6,7 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 17:50:10 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/16 21:07:34 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:00:07 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	init_textures(t_textures *textr)
 	init_img(&(textr->chest), "./textures/chest.xpm");
 	init_img(&(textr->bush), "./textures/bush.xpm");
 	init_img(&(textr->exit), "./textures/chest_open.xpm");
+	init_img(&(textr->mushroom2), "./textures/mushroom2.xpm");
 }
 
 t_list	*add_list(char *line)

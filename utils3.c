@@ -6,7 +6,7 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/16 16:53:54 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/16 20:51:14 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:00:49 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void	init_config(t_config *config)
 	config->coins = 0;
 	config->pl = 0;
 	config->ex = 0;
+	config->lr = 0;
 }
 
 int	game_exit(void)

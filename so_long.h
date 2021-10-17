@@ -6,7 +6,7 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 14:41:41 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/16 22:37:29 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:00:36 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct s_image{
 
 typedef struct s_textures{
 	t_image	mushroom;
+	t_image	mushroom2;
 	t_image	grass;
 	t_image	bush;
 	t_image	chest;
@@ -68,6 +69,7 @@ typedef struct s_config{
 	int			e_y;
 	int			pl;
 	int			ex;
+	int			lr;
 	int			moves;
 	int			coins;
 }	t_config;

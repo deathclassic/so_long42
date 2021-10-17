@@ -6,11 +6,19 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 15:44:03 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/16 21:11:33 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:15:15 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
+
+void	print_char(t_config *config)
+{
+	if (config->lr == 1)
+		ft_macros(config, &(config->textr.mushroom2));
+	else
+		ft_macros(config, &(config->textr.mushroom));
+}
 
 void	get_pos_x(t_config *config, int keycode, int i)
 {
@@ -24,6 +32,7 @@ void	get_pos_x(t_config *config, int keycode, int i)
 		else if (config->p_pos->line[i - 1] == 'E')
 			win_exit();
 		config->p_pos->line[i - 1] = 'P';
+		config->lr = 1;
 	}
 	else if (keycode == D_KEY)
 	{
@@ -34,8 +43,9 @@ void	get_pos_x(t_config *config, int keycode, int i)
 		else if (config->p_pos->line[i + 1] == 'E')
 			win_exit();
 		config->p_pos->line[i + 1] = 'P';
+		config->lr = 0;
 	}
-	ft_macros(config, &(config->textr.mushroom));
+	print_char(config);
 	printf("moves: %d\n", ++config->moves);
 }
 
@@ -64,7 +74,7 @@ void	get_pos_y(t_config *config, int keycode, int i)
 			win_exit();
 		config->p_pos->line[i] = 'P';
 	}
-	ft_macros(config, &(config->textr.mushroom));
+	print_char(config);
 	printf("moves: %d\n", ++config->moves);
 }
 
