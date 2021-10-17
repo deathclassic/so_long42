@@ -6,7 +6,7 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 21:06:32 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/16 20:38:32 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:30:48 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ void	map_checker(t_list *lst)
 {
 	int	i;
 
+	check_rectangle(lst);
 	while (lst)
 	{
 		i = 0;

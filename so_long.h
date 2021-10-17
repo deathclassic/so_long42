@@ -6,7 +6,7 @@
 /*   By: tcharmel <tcharmel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 14:41:41 by tcharmel          #+#    #+#             */
-/*   Updated: 2021/10/17 16:00:36 by tcharmel         ###   ########.fr       */
+/*   Updated: 2021/10/17 17:02:13 by tcharmel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,7 @@ void	map_checker(t_list *lst);
 void	error_map(void);
 void	error_argc(void);
 void	error_fd(void);
+void	check_rectangle(t_list *lst);
 
 int		game_exit(void);
 int		keypress(int keycode, t_config *config);
